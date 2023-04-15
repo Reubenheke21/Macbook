@@ -409,6 +409,15 @@ border-radius: 100%;
       background-color: #04AA6D;
       color: white;
     }
+
+    .columns{
+      flex: auto;
+      border: black solid 1px;
+      margin: 8px;
+      box-shadow: 2px 2px 5px black;
+      background-color: white;
+    }
+    
   }
 
 
