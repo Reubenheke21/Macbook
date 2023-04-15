@@ -1,18 +1,11 @@
-.class-for-index {
-    background: white;
+body{
+  background: grey;
 }
 
-.class-for-blog {
-  background: white:;
+.class-for-blog{
+  background: white;
 }
 
-.class-for-projects {
-  Background: #FAA0A0;
-}
-
-.class-for-about{
-  background: #FFFAA0;
-}
 /* Add a background colour to the nav */
 .topnav {
     position: relative;
@@ -105,6 +98,7 @@
 
 }
 
+/* Blog stylings */
 #blog{
     display: flex;
     justify-content: center;
@@ -116,6 +110,7 @@
     color:#0f0f0f;
 }
 
+/* Remove  underline in anchor tags*/
 a {
     text-decoration: none;
 }
@@ -209,29 +204,211 @@ a {
     cursor: pointer;
 }
 
-#firstpara{
+.pic-about{
+padding-top: 20px;
+}
+
+.title-picture{
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  border: grey solid 2px;
+  box-shadow: 2px 2px 5px black;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-title{
+  font-family: 'Roboto', sans-serif;
   white-space: nowrap;
+}
+
+#firstpara{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Footer stylings */
+.footer{
+  background: grey;
+  bottom: 0;
   width: 100%;
+  padding: 10px;
+  text-align: center;
 }
 
-#para1{
-  float: left;
+/* Columns on about me page */
+
+.techstack{
+  display: flex;
 }
 
-#first-pic{
-  width: 400px;
-  height: 200px;
+.columns{
+  flex: auto;
+  border: black solid 1px;
+  margin: 10px;
+  box-shadow: 2px 2px 5px black;
+  background-color: white;
 }
+
+.techstack h1{
+  text-align: center;
+}
+
+.logo-image img{
+  width: 60px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-top: -10px;
+  margin-bottom: -15px;
+}
+
+/* Social links, styling using Font Awesome */
+
+.fa {
+  padding: 30px;
+  width: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.fa-facebook{
+background: #3B5998;
+color: white;
+border-radius: 100%;
+}
+
+.fa-twitter{
+background: #1DA1F2;
+color: white;
+border-radius: 100%; 
+}
+
+.fa-linkedin{
+    background: #0072B1;
+    color: white;
+    border-radius: 100%; 
+}
+
+.fa-github{
+    background: black;
+    color: white;
+    border-radius: 100%; 
+}
+
+.fa:hover{
+    opacity: 0.7;
+}
+
+.socials{
+    text-align:center;
+    padding-top: 20px;
+}
+
+.contact-pic{
+    height: 300px;
+    width: 300px;
+    border-radius: 300px;
+}
+
+.picture2 img{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contact-h1, .contact-h3, .details, .contact-p{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.contact-p{
+    padding-top: 50px;
+}
+
+/* Resume button */
+.resume{
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.resume:hover, .resume:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+}
+    
+.resume:active {
+    opacity: .5;
+}
+    
+
 
   /* mobile */
 
-  @media screen and (max-width: 851px){
-    .class-for-index {
-      background: #957DAD;
+  @media screen and (max-width: 660px){
+    .nzpic{
+      height: 200px;
+      display: flex;
+      margin-right: auto;
+      margin-left: auto;
     }
     
-  
-
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+      position: relative;
+    }
+    
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+      display: none;
+    }
+    
+    /* Style navigation menu links */
+    .topnav a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+    
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    /* Style the active link (or home/logo) */
+    .active {
+      background-color: #04AA6D;
+      color: white;
+    }
   }
 
-  
+
